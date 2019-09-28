@@ -4,7 +4,14 @@
 -> dans sgoinfre car manque de place
 -> telechargement des paquets sudo et mise dans le groupe sudo de edbaudou
 -> ajout du path /usr/sbin a $PATH
+
+## Configuration du reseau
 -> creation d'un reseau avec la machine hote sans DHCP puis activation d'une deuxieme carte reseau logique
+-> config de la carte dans /etc/network/interfaces
+auto enp0s8
+iface enp0s8 inet static
+adress 192.168.0.2
+netmask 255.255.255.252
 
 ## Configuration SSH
 -> Fichier de configuration dans /etc/ssh/sshd_confg:
